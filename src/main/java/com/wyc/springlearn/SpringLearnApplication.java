@@ -1,10 +1,10 @@
 package com.wyc.springlearn;
 
-import com.spring4all.swagger.EnableSwagger2Doc;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import springfox.documentation.oas.annotations.EnableOpenApi;
 
-@EnableSwagger2Doc
+@EnableOpenApi
 @SpringBootApplication
 public class SpringLearnApplication {
 
