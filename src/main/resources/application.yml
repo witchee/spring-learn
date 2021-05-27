@@ -1,12 +1,12 @@
 server:
   port: 8080
-logging:
-  level:
-    org:
-      springframework:
-        web:
-          servlet:
-            mvc:
-              method:
-                annotation:
-                  RequestMappingHandlerMapping: trace
+spring:
+  datasource:
+    druid:
+      # 数据库访问配置, 使用druid数据源
+      mysql:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&rewriteBatchedStatements=true&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull
+        username: root
+        password: 1234
